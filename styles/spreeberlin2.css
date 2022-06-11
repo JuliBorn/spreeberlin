@@ -10,12 +10,13 @@
     grid-column-gap: 16px;
 }
 
-body {
+/* body {
     font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
     background-color: #2473ff;
-    font-size: 1vw;
+     font-size: 1vw; 
     line-height: 1.6;
-}
+} 
+*/
 
 h1 {
     margin-top: 0px;
@@ -1097,11 +1098,11 @@ blockquote {
     background-size: auto, auto;
 }
 
-.body-2 {
+/* .body-2 {
     margin-top: 150px;
     margin-bottom: 150px;
     background-color: #2473ff;
-}
+} */
 
 .heading-3 {
     z-index: 10;
@@ -1141,18 +1142,18 @@ blockquote {
     font-family: Edumaxisharp, sans-serif;
 }
 
-.body-3 {
+/* .body-3 {
     background-color: #2473ff;
-}
+} */
 
 .text-span {
     font-size: 28px;
     line-height: 1;
 }
 
-.body-4 {
+/* .body-4 {
     background-color: #2473ff;
-}
+} */
 
 .text-button-2 {
     display: -webkit-box;
@@ -4076,9 +4077,9 @@ blockquote {
         width: auto;
     }
 
-    .body-2 {
+    /* .body-2 {
         margin-top: 150px;
-    }
+    } */
 
     .accordion-item {
         width: auto;
@@ -4195,9 +4196,9 @@ blockquote {
 }
 
 @media screen and (max-width: 891px) {
-    body {
+    /* body {
         font-size: 14px;
-    }
+    } */
 
     h1 {
         line-height: 1.1;
@@ -5330,9 +5331,9 @@ blockquote {
         padding-bottom: 1em;
     }
 
-    .body-2 {
+    /* .body-2 {
         margin-bottom: 100px;
-    }
+    } */
 
     .text-button-2 {
         height: auto;
@@ -5612,10 +5613,6 @@ blockquote {
         padding-left: 10px;
     }
 
-    .flowing-text {
-        font-size: 18px;
-        line-height: 1.2;
-    }
 
     .unterstes-bild {
         margin-bottom: 20px;
@@ -5916,9 +5913,9 @@ blockquote {
         border-radius: 2px;
     }
 
-    .body-2 {
+    /* .body-2 {
         margin-top: 80px;
-    }
+    } */
 
     .heading-3 {
         width: auto;
@@ -6459,12 +6456,7 @@ blockquote {
         padding-left: 10px;
     }
 
-    .flowing-text {
-        margin-top: 0px;
-        margin-bottom: 10px;
-        font-size: 14px;
-        line-height: 1.2;
-    }
+
 
     .unterstes-bild {
         margin-top: 0px;

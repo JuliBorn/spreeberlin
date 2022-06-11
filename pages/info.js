@@ -483,7 +483,7 @@ export default function Info(props) {
                             <p className='infoAccordionText'>KONTAKT</p>
                         </AccordionSummary>
                         <AccordionDetails elevation={0}>
-                            <div className='infoBox'>
+                            <Box>
                                 <Grid container spacing={1}>
                                     <Grid item xs={12} className='myFlex'>
                                         <p className='flowing-text'>
@@ -517,7 +517,7 @@ export default function Info(props) {
                                         </Link>
                                     </Grid>
                                 </Grid>
-                            </div>
+                            </Box>
                         </AccordionDetails>
                     </Accordion>
                     <img

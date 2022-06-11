@@ -119,19 +119,6 @@ const Header = () => {
                         }}
                     >
                         <Hamburger toggled={isOpen} toggle={setOpen} />
-                        {/* <div
-                                data-is-ix2-target='1'
-                                className='lottie-animation'
-                                data-w-id='68b847b0-6442-084c-8200-708cd136ca6b'
-                                data-animation-type='lottie'
-                                data-src='documents/lottieflow-menu-nav-07-ffffff-easey.json'
-                                data-loop='0'
-                                data-direction='1'
-                                data-autoplay='0'
-                                data-renderer='svg'
-                                data-default-duration='2.4791666666666665'
-                                data-duration='0'
-                            ></div> */}
                     </Box>
                 </Box>
 
@@ -143,6 +130,7 @@ const Header = () => {
                     }}
                     open={isOpen}
                     onClick={handleClose}
+                    display="flex"
                 >
                     <Box >
                         <Link href='/'>
