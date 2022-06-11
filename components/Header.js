@@ -130,9 +130,19 @@ const Header = () => {
                     }}
                     open={isOpen}
                     onClick={handleClose}
-                    display="flex"
+                    display='flex'
                 >
-                    <Box >
+                    <Box
+                        sx={{
+                            display: 'flex',
+                            flexDirection: 'column',
+                            justifyContent: 'space-between',
+                            paddingBottom: "18vh",
+                            paddingTop: "18vh",
+                            height: "100%"
+                            
+                        }}
+                    >
                         <Link href='/'>
                             <a
                                 className={`mobileMenuLink  ${
