@@ -139,7 +139,7 @@ const Header = () => {
                             flexDirection: 'column',
                             justifyContent: 'space-between',
                             paddingBottom: '12vh',
-                            // paddingTop: '18vh',
+                            paddingTop: '18vh',
                             height: '100%',
                         }}
                     >
