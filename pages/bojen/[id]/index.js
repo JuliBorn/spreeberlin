@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 import { Box, Typography, Button, Grid } from '@mui/material';
 
-import { bojen } from '../../../config/bojen';
+import { bojen } from '../../../bojen';
 
 import { Line } from 'react-chartjs-2';
 import { de } from 'date-fns/locale';
@@ -42,7 +42,7 @@ const genChart = (timeData, title, color) => {
 const options = {
     elements: {
         point: {
-            radius: 3,
+            radius: 5,
         },
     },
     scales: {

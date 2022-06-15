@@ -24,6 +24,7 @@ const Header = () => {
                 sx={{
                     zIndex: 2100,
                     backgroundColor: '#2473FF',
+                    maxHeight: '20vw',
                 }}
                 elevation={0}
             >
@@ -137,10 +138,9 @@ const Header = () => {
                             display: 'flex',
                             flexDirection: 'column',
                             justifyContent: 'space-between',
-                            paddingBottom: "18vh",
-                            paddingTop: "18vh",
-                            height: "100%"
-                            
+                            paddingBottom: '12vh',
+                            // paddingTop: '18vh',
+                            height: '100%',
                         }}
                     >
                         <Link href='/'>
