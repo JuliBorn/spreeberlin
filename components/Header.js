@@ -24,7 +24,7 @@ const Header = () => {
                 sx={{
                     zIndex: 2100,
                     backgroundColor: '#2473FF',
-                    maxHeight: '20vw',
+                    // maxHeight: '25vw',
                 }}
                 elevation={0}
             >
