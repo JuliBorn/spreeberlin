@@ -76,7 +76,8 @@ const Layout = ({ children }) => {
                         >
                             <Footer />
                         </AppBar>
-
+                            
+                            
                         <Script src='https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js'></Script>
                         <Script src='https://code.jquery.com/jquery-3.6.0.min.js' />
                         {/* <Script src='/webflow.js' /> */}

@@ -30,7 +30,6 @@ export default function Info(props) {
                 <img
                     src='/static/images/Stroke-1.svg'
                     className='myInfoDivider'
-                    
                 />
                 <Accordion
                     sx={{
@@ -84,24 +83,20 @@ export default function Info(props) {
                                     beteiligten Akteuren.
                                 </p>
                             </Grid>
-                            <Grid
-                                item={true}
-                                xs={12}
-                                lg={4}
-                                container
-                                spacing={1}
-                            >
-                                <Grid item={true} xs={12}>
-                                    <img
-                                        src='/static/images/SpreeBerlin_DASBILD_klein.jpg'
-                                        className='myInfoImage'
-                                    ></img>
-                                </Grid>
-                                <Grid item={true} xs={12}>
-                                    <img
-                                        src='/static/images/Bouye03.jpg'
-                                        className='myInfoImage'
-                                    ></img>
+                            <Grid item={true} xs={12} lg={4}>
+                                <Grid container spacing={1}>
+                                    <Grid item={true} xs={12}>
+                                        <img
+                                            src='/static/images/SpreeBerlin_DASBILD_klein.jpg'
+                                            className='myInfoImage'
+                                        ></img>
+                                    </Grid>
+                                    <Grid item={true} xs={12}>
+                                        <img
+                                            src='/static/images/Bouye03.jpg'
+                                            className='myInfoImage'
+                                        ></img>
+                                    </Grid>
                                 </Grid>
                             </Grid>
                             <Grid
@@ -109,23 +104,21 @@ export default function Info(props) {
                                 xs={12}
                                 lg={4}
                                 className='flowing-text'
-                                container
-                                spacing={1}
                             >
-                                <Grid item={true} xs={12} m={4}>
-                                    <Box p={8}>
-                                        <img
-                                            src='/static/images/HC-PCDesign-p-500.png'
-                                            className='myInfoImage'
-                                        ></img>
-                                    </Box>
-                                </Grid>
-                                <Grid item={true} xs={12}>
-                                    <img
-                                        src='/static/images/SpreeVision01.png'
-                                        className='myInfoImage'
-                                    ></img>
-                                </Grid>
+   
+                                        <Box mb={1} p={8}>
+                                            <img
+                                                src='/static/images/HC-PCDesign-p-500.png'
+                                                className='myInfoImage'
+                                            ></img>
+                                        </Box>
+                                        <Box mt={1}>
+                                            <img
+                                                src='/static/images/SpreeVision01.png'
+                                                className='myInfoImage'
+                                            ></img>
+                                        </Box>
+                          
                             </Grid>
                         </Grid>
                     </AccordionDetails>
@@ -199,42 +192,38 @@ export default function Info(props) {
                                     xs={12}
                                     lg={4}
                                     className='flowing-text'
-                                    container
-                                    spacing={1}
                                 >
-                                    <Grid item={true} xs={12}>
+                                    <Box mb={1}>
                                         <img
                                             src='/static/images/Blaualgen_Kanal.jpg'
                                             className='myInfoImage'
                                         ></img>
-                                    </Grid>
-                                    <Grid item={true} xs={12}>
+                                    </Box>
+                                    <Box mt={1}>
                                         <img
                                             src='/static/images/Reederei_Riedel.jpeg'
                                             className='myInfoImage'
                                         ></img>
-                                    </Grid>
+                                    </Box>
                                 </Grid>
                                 <Grid
                                     item={true}
                                     xs={12}
                                     lg={4}
                                     className='flowing-text'
-                                    container
-                                    spacing={1}
                                 >
-                                    <Grid item={true} xs={12}>
+                                    <Box mb={1}>
                                         <img
                                             src='/static/images/Fischsterben.jpg'
                                             className='myInfoImage'
                                         ></img>
-                                    </Grid>
-                                    <Grid item={true} xs={12}>
+                                    </Box>
+                                    <Box mt={1}>
                                         <img
                                             src='/static/images/Rudolf_Kloos01.jpg'
                                             className='myInfoImage'
                                         ></img>
-                                    </Grid>
+                                    </Box>
                                 </Grid>
                             </Grid>
                         </Box>
@@ -311,35 +300,36 @@ export default function Info(props) {
                                 xs={12}
                                 lg={8}
                                 className='flowing-text'
-                                container
-                                spacing={1}
                             >
-                                <Grid item={true} xs={12} lg={6}>
-                                    Die Boje schwimmt im Spreekanal und versorgt
-                                    das Wasser mit Sauerstoff. Oberhalb der
-                                    Wasseroberfläche wird die Wasserqualität
-                                    reflektiert. Die Energieversorgung kann zum
-                                    einen durch das Ökostromnetz der Stadt, zum
-                                    anderen durch menschliche Kraft (Sportgeräte
-                                    o.ä.) erfolgen.
-                                </Grid>
-                                <Grid item={true} xs={12} lg={6}>
-                                    <img
-                                        src='/static/images/SpreeBerlin_Bodemuseum.jpg'
-                                        className='myInfoImage'
-                                    ></img>
-                                </Grid>
-                                <Grid item={true} xs={12} lg={6}>
-                                    <img
-                                        src='/static/images/Boje_Sideview.jpg'
-                                        className='myInfoImage'
-                                    ></img>
-                                </Grid>
-                                <Grid item={true} xs={12} lg={6}>
-                                    <img
-                                        src='/static/images/Boje_Modellfunktion.jpg'
-                                        className='myInfoImage'
-                                    ></img>
+                                <Grid container spacing={1}>
+                                    <Grid item={true} xs={12} lg={6}>
+                                        Die Boje schwimmt im Spreekanal und
+                                        versorgt das Wasser mit Sauerstoff.
+                                        Oberhalb der Wasseroberfläche wird die
+                                        Wasserqualität reflektiert. Die
+                                        Energieversorgung kann zum einen durch
+                                        das Ökostromnetz der Stadt, zum anderen
+                                        durch menschliche Kraft (Sportgeräte
+                                        o.ä.) erfolgen.
+                                    </Grid>
+                                    <Grid item={true} xs={12} lg={6}>
+                                        <img
+                                            src='/static/images/SpreeBerlin_Bodemuseum.jpg'
+                                            className='myInfoImage'
+                                        ></img>
+                                    </Grid>
+                                    <Grid item={true} xs={12} lg={6}>
+                                        <img
+                                            src='/static/images/Boje_Sideview.jpg'
+                                            className='myInfoImage'
+                                        ></img>
+                                    </Grid>
+                                    <Grid item={true} xs={12} lg={6}>
+                                        <img
+                                            src='/static/images/Boje_Modellfunktion.jpg'
+                                            className='myInfoImage'
+                                        ></img>
+                                    </Grid>
                                 </Grid>
                             </Grid>
                             <Grid
@@ -347,7 +337,6 @@ export default function Info(props) {
                                 xs={12}
                                 lg={4}
                                 className='flowing-text'
-                                container
                             >
                                 <img
                                     src='/static/images/Boje_Descritpion-p-2000.jpeg'
@@ -422,7 +411,7 @@ export default function Info(props) {
                     </AccordionSummary>
                     <AccordionDetails elevation={0}>
                         <Grid container spacing={1}>
-                            <Grid item={true} xs={12} lg={2} spacing={2}>
+                            <Grid item={true} xs={12} lg={2}>
                                 <img src='/static/images/BMBF_Logo_DE.jpg'></img>
                             </Grid>
                             <Grid item={true} xs={12} lg={2}>
@@ -519,7 +508,12 @@ export default function Info(props) {
                         <p className='infoAccordionText'>KONTAKT</p>
                     </AccordionSummary>
                     <AccordionDetails elevation={0}>
-                        <Box p={2} sx={{}} display="flex" flexDirection="column">
+                        <Box
+                            p={2}
+                            sx={{}}
+                            display='flex'
+                            flexDirection='column'
+                        >
                             <p className='flowing-text'>
                                 <strong> Symbiotic LAB </strong>
                             </p>

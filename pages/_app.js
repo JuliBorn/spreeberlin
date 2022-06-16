@@ -1,6 +1,8 @@
 import React from 'react';
 import Layout from '../components/Layout';
 
+import Router from 'next/router';
+
 
 import '../styles/globals.css';
 import '../styles/normalize.css';
