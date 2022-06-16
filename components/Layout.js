@@ -46,7 +46,7 @@ const Layout = ({ children }) => {
                 <div>
                     <div>
                         <Header />
-                        <div className='wrapper'>
+                        <div >
                             {router.pathname == '/' && <Map />}
 
                             {children}
