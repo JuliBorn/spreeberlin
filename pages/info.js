@@ -475,7 +475,6 @@ export default function Info(props) {
                     expanded={expandedPanel === 'panel6'}
                     onChange={handleAccordionChange('panel6')}
                     TransitionProps={{ unmountOnExit: true }}
-                  
                 >
                     <AccordionSummary>
                         <a className='infoAccordionText'>
@@ -517,40 +516,34 @@ export default function Info(props) {
                         <p className='infoAccordionText'>KONTAKT</p>
                     </AccordionSummary>
                     <AccordionDetails elevation={0}>
-                        <Box>
-                            <Grid container spacing={1}>
-                                <Grid item={true} xs={12} className='myFlex'>
-                                    <p className='flowing-text'>
-                                        <strong> Symbiotic LAB </strong>
-                                    </p>
-                                    <Link href='mailto:info@symbiotic-lab.com'>
-                                        <a className='flowing-text'>
-                                            info(at)symbiotic-lab.com
-                                        </a>
-                                    </Link>
-                                    <Link href='https://www.symbiotic-lab.com'>
-                                        <a className='flowing-text'>
-                                            www.symbiotic-lab.com
-                                        </a>
-                                    </Link>
-                                </Grid>
+                        <Box p={2} sx={{}} display="flex" flexDirection="column">
+                            <p className='flowing-text'>
+                                <strong> Symbiotic LAB </strong>
+                            </p>
+                            <Link href='mailto:info@symbiotic-lab.com'>
+                                <a className='flowing-text'>
+                                    info(at)symbiotic-lab.com
+                                </a>
+                            </Link>
+                            <Link href='https://www.symbiotic-lab.com'>
+                                <a className='flowing-text'>
+                                    www.symbiotic-lab.com
+                                </a>
+                            </Link>
 
-                                <Grid item={true} xs={12} className='myFlex'>
-                                    <p className='flowing-text'>
-                                        <strong>JKUKULA</strong>
-                                    </p>
-                                    <Link href='mailto:info@jakobkukula.com'>
-                                        <a className='flowing-text'>
-                                            info(at)jakobkukula.com
-                                        </a>
-                                    </Link>
-                                    <Link href='https://www.jakobkukula.com'>
-                                        <a className='flowing-text'>
-                                            www.jakobkukula.com
-                                        </a>
-                                    </Link>
-                                </Grid>
-                            </Grid>
+                            <p className='flowing-text'>
+                                <strong>JKUKULA</strong>
+                            </p>
+                            <Link href='mailto:info@jakobkukula.com'>
+                                <a className='flowing-text'>
+                                    info(at)jakobkukula.com
+                                </a>
+                            </Link>
+                            <Link href='https://www.jakobkukula.com'>
+                                <a className='flowing-text'>
+                                    www.jakobkukula.com
+                                </a>
+                            </Link>
                         </Box>
                     </AccordionDetails>
                 </Accordion>

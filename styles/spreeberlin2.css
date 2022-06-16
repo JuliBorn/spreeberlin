@@ -3311,6 +3311,10 @@ blockquote {
     white-space: pre-line;
 }
 
+.flowing-text-black{
+    color: #000;
+}
+
 .flowing-text p {
     padding-top: 4px;
     font-family: Peakrounded, sans-serif;

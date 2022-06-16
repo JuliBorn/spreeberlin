@@ -28,7 +28,10 @@ export default function Imprint(props) {
                                     >
                                         <strong className='bold-text-3'>‍</strong>
                                         <span >
-                                            + HAFTUNG FÜR INHALTE
+                                            + HAFTUNG FÜR INHALTE<br /><br />
+                                            JAKOB KUKUA<br />
+                                            LINIENSTRAßE 110<br />
+                                            10115 BERLIN<br />
                                             <br />
                                             ALS DIENSTEANBIETER SIND WIR GEMÄSS
                                             § 7 ABS.1 TMG FÜR EIGENE INHALTE AUF
