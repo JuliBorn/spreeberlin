@@ -140,7 +140,7 @@ const Header = () => {
                             justifyContent: 'space-between',
                             paddingBottom: '18vh',
                             paddingTop: '18vh',
-                            // height: '100%',
+                            height: '100%',
                         }}
                     >
                         <Link href='/'>
