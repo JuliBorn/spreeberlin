@@ -601,6 +601,13 @@ body {
 .youtubePlayer {
 }
 
+.loadingScreen{
+    width: "400px";
+    height: "200px";
+    z-index: 3000;
+    border: red solid 5px;
+}
+
 @media screen and (max-width: 767px) {
     .youtubePlayer {
         max-width: 100%;

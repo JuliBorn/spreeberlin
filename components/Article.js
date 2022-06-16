@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 import Image from 'next/image';
 import { Fade } from 'react-reveal';
-7;
+
 
 const Article = (props) => {
     return (

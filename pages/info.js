@@ -84,20 +84,20 @@ export default function Info(props) {
                                 </p>
                             </Grid>
                             <Grid item={true} xs={12} lg={4}>
-                                <Grid container spacing={1}>
-                                    <Grid item={true} xs={12}>
+                                <Box >
+                                    <Box mb={1}>
                                         <img
                                             src='/static/images/SpreeBerlin_DASBILD_klein.jpg'
                                             className='myInfoImage'
                                         ></img>
-                                    </Grid>
-                                    <Grid item={true} xs={12}>
+                                    </Box>
+                                    <Box mt={1}>
                                         <img
                                             src='/static/images/Bouye03.jpg'
                                             className='myInfoImage'
                                         ></img>
-                                    </Grid>
-                                </Grid>
+                                    </Box>
+                                </Box>
                             </Grid>
                             <Grid
                                 item={true}
@@ -105,20 +105,18 @@ export default function Info(props) {
                                 lg={4}
                                 className='flowing-text'
                             >
-   
-                                        <Box mb={1} p={8}>
-                                            <img
-                                                src='/static/images/HC-PCDesign-p-500.png'
-                                                className='myInfoImage'
-                                            ></img>
-                                        </Box>
-                                        <Box mt={1}>
-                                            <img
-                                                src='/static/images/SpreeVision01.png'
-                                                className='myInfoImage'
-                                            ></img>
-                                        </Box>
-                          
+                                <Box mb={1} p={8}>
+                                    <img
+                                        src='/static/images/HC-PCDesign-p-500.png'
+                                        className='myInfoImage'
+                                    ></img>
+                                </Box>
+                                <Box mt={1}>
+                                    <img
+                                        src='/static/images/SpreeVision01.png'
+                                        className='myInfoImage'
+                                    ></img>
+                                </Box>
                             </Grid>
                         </Grid>
                     </AccordionDetails>
