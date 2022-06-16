@@ -11,12 +11,14 @@ const Article = (props) => {
         <>
             <Fade>
                 <Link href={props.link} passHref>
+
                     <div className='card_content'>
                         <img
                             src={`/static/images/${props.pic_url}`}
                             // width='600px'
                             // height='450px'
-                            // layout="fill"
+                            layout="fill"
+                            objectFit="cover"
                             z-index={101}
                             className='content_image'
                             opacity={0.5}

@@ -5,6 +5,8 @@ import Link from 'next/link';
 
 import ReactPlayer from 'react-player/youtube';
 
+import Image from 'next/image';
+
 import {
     Accordion,
     AccordionSummary,
@@ -28,6 +30,7 @@ export default function Info(props) {
                 <img
                     src='/static/images/Stroke-1.svg'
                     className='myInfoDivider'
+                    
                 />
                 <Accordion
                     sx={{
