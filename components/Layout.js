@@ -30,8 +30,19 @@ const myTheme = createTheme({
         text: { primary: '#ffffff' },
     },
     accordion: {
-        root: {
-            maxHeight: '3px',
+        // root: {
+        //     maxHeight: '3px',
+        // },
+    },
+
+    styleOverrides: {
+        body: {
+  
+            color: 'darkred',
+            backgroundColor: 'grey',
+            '& h1': {
+                color: 'black',
+            },
         },
     },
 });
@@ -46,7 +57,7 @@ const Layout = ({ children }) => {
                 <div>
                     <div>
                         <Header />
-                        <div >
+                        <div>
                             {router.pathname == '/' && <Map />}
 
                             {children}

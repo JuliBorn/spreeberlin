@@ -15,8 +15,8 @@
     background-color: #2473ff;
      font-size: 1vw; 
     line-height: 1.6;
-} 
-*/
+}  */
+
 
 h1 {
     margin-top: 0px;
@@ -73,10 +73,7 @@ p {
     font-size: 15px;
 }
 
-a {
-    font-size: 1em;
-    text-decoration: none;
-}
+
 
 blockquote {
     margin-bottom: 1em;

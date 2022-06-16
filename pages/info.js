@@ -3,8 +3,6 @@ import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Link from 'next/link';
 
-
-
 import ReactPlayer from 'react-player/youtube';
 
 import {
@@ -417,9 +415,7 @@ export default function Info(props) {
                     TransitionProps={{ unmountOnExit: true }}
                 >
                     <AccordionSummary>
-                        <Typography className='infoAccordionText'>
-                            PARTNER
-                        </Typography>
+                        <p className='infoAccordionText'>PARTNER</p>
                     </AccordionSummary>
                     <AccordionDetails elevation={0}>
                         <Grid container spacing={1}>
@@ -479,14 +475,12 @@ export default function Info(props) {
                     expanded={expandedPanel === 'panel6'}
                     onChange={handleAccordionChange('panel6')}
                     TransitionProps={{ unmountOnExit: true }}
-                    disableGutters
+                  
                 >
                     <AccordionSummary>
-                        <Box>
-                            <Typography className='infoAccordionText'>
-                                NEW EUROPEAN BAUHAUS
-                            </Typography>
-                        </Box>
+                        <a className='infoAccordionText'>
+                            NEW EUROPEAN BAUHAUS
+                        </a>
                     </AccordionSummary>
                     <AccordionDetails elevation={0}>
                         <Box sx={{ width: '100%' }}>
