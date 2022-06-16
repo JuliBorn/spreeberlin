@@ -12,6 +12,7 @@ import { useRouter } from 'next/router';
 
 import dynamic from 'next/dynamic';
 import Script from 'next/script';
+import { lineHeight } from '@mui/system';
 
 const Map = dynamic(
     () => import('./Map'),
@@ -43,6 +44,7 @@ const myTheme = createTheme({
             '& h1': {
                 color: 'black',
             },
+            lineHeight: 1.6
         },
     },
 });
@@ -53,7 +55,7 @@ const Layout = ({ children }) => {
     return (
         <>
             <ThemeProvider theme={myTheme}>
-                <CssBaseline />
+           
                 <div>
                     <div>
                         <Header />

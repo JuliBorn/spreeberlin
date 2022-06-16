@@ -8,25 +8,26 @@ export default function Imprint(props) {
     return (
         <>
             <Box display='flex' alignItems='center' margin={2}>
-                <div class='content'>
-                    <div class='myContent'>
+                <div className='content'>
+                    <div className='myContent'>
 
                         <div
                             data-hover='false'
                             data-delay='0'
                             data-w-id='bec9b11a-ac45-fd9d-508d-0363f89df620'
-                            class='accordion-item w-dropdown'
+                            className='accordion-item w-dropdown'
                         >
-                            <div class='text-block-4'>IMPRESSUM</div>
+                            <div className='text-block-4'>IMPRESSUM</div>
 
-                            <nav class='dropdown-list-2 w-dropdown-list'>
-                                <div class='w-layout-grid grid-5'>
+                            <nav className='dropdown-list-2 w-dropdown-list'>
+                                <div className='w-layout-grid grid-5'>
                                     <p
                                         id='w-node-ad308063-8b9b-d2ca-62e1-de1054cca554-176eccca'
-                                        class='paragraph-3-copy'
+                                        className='paragraph-3-copy'
+                                        lassName="flowing-text"
                                     >
-                                        <strong class='bold-text-3'>‍</strong>
-                                        <span>
+                                        <strong className='bold-text-3'>‍</strong>
+                                        <span >
                                             + HAFTUNG FÜR INHALTE
                                             <br />
                                             ALS DIENSTEANBIETER SIND WIR GEMÄSS
@@ -108,9 +109,10 @@ export default function Imprint(props) {
                                     </p>
                                     <p
                                         id='w-node-_95a0bfab-d21b-7b59-88e2-602f766a6467-176eccca'
-                                        class='paragraph-3-copy'
+                                        className='paragraph-3-copy'
+                                        lassName="flowing-text"
                                     >
-                                        <strong class='bold-text-2'>
+                                        <strong className='bold-text-2'>
                                             + COOKIES
                                             <br />
                                             DIE INTERNETSEITEN VERWENDEN
@@ -171,10 +173,10 @@ export default function Imprint(props) {
                             src='images/Stroke-1.svg'
                             loading='lazy'
                             alt=''
-                            class='divider info'
+                            className='divider info'
                         />
                     </div>
-                    <div class='wf-section'></div>
+                    <div className='wf-section'></div>
                 </div>
             </Box>
         </>
