@@ -467,9 +467,9 @@ export default function Info(props) {
                     TransitionProps={{ unmountOnExit: true }}
                 >
                     <AccordionSummary>
-                        <a className='infoAccordionText' sx={{paddingLeft: "0px"}}>
+                        <p className='infoAccordionText' >
                             NEW EUROPEAN BAUHAUS
-                        </a>
+                        </p>
                     </AccordionSummary>
                     <AccordionDetails elevation={0}>
                         <Box sx={{ width: '100%' }}>

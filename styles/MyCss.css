@@ -528,7 +528,8 @@ body {
 .myInfoDivider {
     padding-left: 0px;
     padding-right: 0px;
-    width: 100vw;
+    /* width: 100%; */
+    min-width: 100vw;
     padding-top: 16px;
     padding-bottom: 16px;
 }
