@@ -866,7 +866,7 @@ blockquote {
     bottom: 0%;
     z-index: 200;
     max-width: 450px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     margin-left: 40px;
     user-select: none;
 }
