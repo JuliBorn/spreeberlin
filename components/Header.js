@@ -26,7 +26,7 @@ const Header = () => {
           backgroundColor: '#2473FF',
 
           //   minHeight: '22vh',
-          maxHeight: { xs: '80%', md: '100%' },
+          maxHeight: { xs: '70%', md: '90%' },
         }}
         elevation={0}
       >
