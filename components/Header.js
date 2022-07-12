@@ -26,7 +26,9 @@ const Header = () => {
           backgroundColor: '#2473FF',
 
           //   minHeight: '22vh',
-          maxHeight: { xs: '70%', md: '90%' },
+          maxHeight: { xs: '100px', md: '80px' },
+          marginTop: 'auto',
+          marginBottom: 'auto',
         }}
         elevation={0}
       >
@@ -40,8 +42,8 @@ const Header = () => {
                     //marginleft:64,
                     marginTop: 'auto',
                     marginBottom: 'auto',
-                    paddingTop: 2,
-                    paddingBottom: 2,
+                    // paddingTop: 2,
+                    // paddingBottom: 2,
                   }}
                 >
                   <img
