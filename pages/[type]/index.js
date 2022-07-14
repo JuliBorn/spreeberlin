@@ -25,13 +25,13 @@ export default function Geschichte(props) {
       <Box
         sx={{
           display: { xs: 'block', md: 'false' },
-          minHeight: '48px',
+          height: '32px',
         }}
       ></Box>
       <Box
         sx={{
           display: { xs: 'block' },
-          minHeight: '64px',
+          height: '32px',
         }}
       ></Box>
       {router.query.type == 'geschichte' && (
