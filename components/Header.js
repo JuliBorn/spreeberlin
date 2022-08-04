@@ -29,6 +29,10 @@ const Header = () => {
           maxHeight: { xs: '100px', md: '80px' },
           marginTop: 'auto',
           marginBottom: 'auto',
+          display: 'flex',
+          flexDirection: 'column',
+          // alignItems: 'left',
+          justifyContent: 'center',
         }}
         elevation={0}
       >
