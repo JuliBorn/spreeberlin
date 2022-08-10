@@ -46,8 +46,8 @@ const Header = () => {
                     //marginleft:64,
                     marginTop: 'auto',
                     marginBottom: 'auto',
-                    // paddingTop: 2,
-                    // paddingBottom: 2,
+                    paddingTop: 2,
+                    paddingBottom: 2,
                   }}
                 >
                   <img
