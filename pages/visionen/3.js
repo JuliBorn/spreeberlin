@@ -475,11 +475,11 @@ export default function Artikel(props) {
       <img src="/static/images/Stroke-1.svg" className="myInfoDivider" />
       <Box ml={2} sx={{ display: 'flex' }}>
         <Box>
-          <p className="flowing-text">{`Texte von `}</p>
+          <p className="flowing-text-small">{`Texte von`}</p>
         </Box>
         <Box ml={1} sx={{ display: 'inline' }}>
           <Link href="http://www.niklasliebetrau.de/">
-            <a className="flowing-text">{`Niklas Liebetrau`}</a>
+            <a className="flowing-text-small">{`Niklas Liebetrau`}</a>
           </Link>
         </Box>
       </Box>
