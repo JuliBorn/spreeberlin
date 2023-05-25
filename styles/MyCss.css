@@ -14,6 +14,10 @@ a {
     width: 400px;
 }
 
+.mapboxgl-popup-close-button {
+    color: red;
+}
+
 .mapboxgl-popup-content {
     background-color: rgba(36, 115, 255, 0.88);
     color: white;
@@ -610,6 +614,10 @@ body {
     border: red solid 5px;
 }
 
+.subTitle {
+    color: white;
+    padding-left: 10px;
+}
 @media screen and (max-width: 767px) {
     .youtubePlayer {
         max-width: 100%;

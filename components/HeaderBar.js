@@ -15,6 +15,7 @@ import Image from 'next/image';
 import Lottie from 'react-lottie';
 
 import * as animationData from '../public/static/myLottie.json';
+import { Typography } from '@mui/material';
 
 const HeaderBar = () => {
     //const [menuVisible, setMenuVisible] = useState(true);
@@ -61,6 +62,7 @@ const HeaderBar = () => {
                                 alt=''
                                 className='logo-image'
                             ></Image>
+                            
                         </Box>
                         <Box
                             sx={{

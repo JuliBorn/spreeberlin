@@ -5,7 +5,7 @@ import { Cross as Hamburger } from 'hamburger-react'
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 
-import { Backdrop, Box, AppBar, Grid, Toolbar } from '@mui/material'
+import { Backdrop, Box, AppBar, Grid, Toolbar, Typography } from '@mui/material'
 
 import Link from 'next/link'
 import Image from 'next/image'
@@ -33,6 +33,7 @@ const Header = () => {
           flexDirection: 'column',
           // alignItems: 'left',
           justifyContent: 'center',
+          minHeight: '100px',
         }}
         elevation={0}
       >
@@ -46,8 +47,9 @@ const Header = () => {
                     //marginleft:64,
                     marginTop: 'auto',
                     marginBottom: 'auto',
-                    paddingTop: 2,
+                    paddingTop: 4   ,
                     paddingBottom: 2,
+                     
                   }}
                 >
                   <img
@@ -59,6 +61,9 @@ const Header = () => {
                     className="logo-image"
                     zIndex={1000000}
                   ></img>
+                  <Typography class="subTitle">Die Stimme eines Flusses
+                  
+                  </Typography>
                 </Box>
               </a>
             </Link>
