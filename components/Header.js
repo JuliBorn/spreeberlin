@@ -61,9 +61,9 @@ const Header = () => {
                     className="logo-image"
                     zIndex={1000000}
                   ></img>
-                  <Typography class="subTitle">Die Stimme eines Flusses
+                  {/* <Typography class="subTitle">Die Stimme eines Flusses
                   
-                  </Typography>
+                  </Typography> */}
                 </Box>
               </a>
             </Link>
