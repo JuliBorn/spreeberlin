@@ -25,7 +25,7 @@ export default function Geschichte(props) {
       <Box
         sx={{
           display: { xs: 'block', md: 'false' },
-          height: '32px',
+          height: '64px',
         }}
       ></Box>
       <Box

@@ -8,6 +8,11 @@ db.ts
 .env
 package-lock.json
 
+
+pw
+/VR
+/public/Build
+
 # testing
 /coverage
 

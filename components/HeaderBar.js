@@ -62,7 +62,6 @@ const HeaderBar = () => {
                                 alt=''
                                 className='logo-image'
                             ></Image>
-                            
                         </Box>
                         <Box
                             sx={{
@@ -106,7 +105,6 @@ const HeaderBar = () => {
                                     AKTUELLES
                                 </a>
                             </Link>
-
                             <Link href='/visionen'>
                                 <a
                                     className={`nav-link w-nav-link ${
@@ -127,6 +125,17 @@ const HeaderBar = () => {
                                     }`}
                                 >
                                     Info
+                                </a>
+                            </Link>
+                            <Link href='/ar'>
+                                <a
+                                    className={`nav-link w-nav-link ${
+                                        router.pathname == '/ar'
+                                            ? `w--current`
+                                            : ''
+                                    }`}
+                                >
+                                    AR
                                 </a>
                             </Link>
                         </Box>
@@ -153,9 +162,7 @@ const HeaderBar = () => {
                                     data-renderer='svg'
                                     data-default-duration='2.4791666666666665'
                                     data-duration='0'
-                                >
-                                    
-                                </div>
+                                ></div>
                             </div>
                             {isOpen && (
                                 <nav role='navigation' className='myOpenMenu'>

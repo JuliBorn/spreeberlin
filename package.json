@@ -9,7 +9,6 @@
     },
     "engines": {
         "node": "16.x"
-  
     },
     "dependencies": {
         "@emotion/react": "^11.9.0",
@@ -42,6 +41,7 @@
         "react-player": "^2.10.1",
         "react-reveal": "^1.2.2",
         "react-ticker": "^1.2.2",
+        "react-unity-webgl": "^9.4.2",
         "sequelize": "^6.19.0",
         "sharp": "^0.30.4",
         "spiced-pg": "^1.0.4",

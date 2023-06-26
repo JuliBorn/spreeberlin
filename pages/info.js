@@ -26,7 +26,7 @@ export default function Info(props) {
 
   return (
     <>
-      <Box marginTop={6}>
+      <Box marginTop={12}>
         <img src="/static/images/Stroke-1.svg" className="myInfoDivider" />
         <Accordion
           sx={{

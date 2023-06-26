@@ -28,7 +28,7 @@ export default function Artikel(props) {
             <Box
                 sx={{
                     display: { xs: 'block', md: 'false' },
-                    minHeight: '32px',
+                    minHeight: '64px',
                 }}
             ></Box>
             <Box
