@@ -80,7 +80,7 @@ const HeaderBar = () => {
                                             : ''
                                     }`}
                                 >
-                                    KARTE
+                                    {locale == 'de' ? 'Karte' : 'Map'}
                                 </a>
                             </Link>
                             <Link href='/geschichte'>
@@ -135,7 +135,7 @@ const HeaderBar = () => {
                                             : ''
                                     }`}
                                 >
-                                    AR
+                                    3D
                                 </a>
                             </Link>
                         </Box>

@@ -24,6 +24,7 @@ const UnityAR = () => {
                         //console.log("quitting done?", router)
                         //console.log("quitting done?", url)
                         router.push(url)
+                        
                     })
                     .catch((e) => console.log(e));
             }
