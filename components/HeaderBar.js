@@ -18,6 +18,7 @@ import * as animationData from '../public/static/myLottie.json';
 import { Typography } from '@mui/material';
 
 const HeaderBar = () => {
+    const {locale} = useRouter();
     //const [menuVisible, setMenuVisible] = useState(true);
     const router = useRouter();
     const [isOpen, setOpen] = useState(true);
@@ -81,6 +82,7 @@ const HeaderBar = () => {
                                     }`}
                                 >
                                     {locale == 'de' ? 'Karte' : 'Map'}
+                                    {locale}
                                 </a>
                             </Link>
                             <Link href='/geschichte'>
