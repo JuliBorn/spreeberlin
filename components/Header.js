@@ -81,6 +81,30 @@ const Header = () => {
                                         className='logo-image'
                                         zIndex={1000000}
                                     ></img>
+                                    <Button onClick={() => handleLocale('de')}>
+                                        <div
+                                            className={`menuLink ${
+                                                router.locale == 'de'
+                                                    ? `current`
+                                                    : ''
+                                            }`}
+                                        >
+                                            de
+                                        </div>
+                                    </Button>
+                                    <Button
+                                        onClick={() => handleLocale('en-US')}
+                                    >
+                                        <div
+                                            className={`menuLink ${
+                                                router.locale == 'en-US'
+                                                    ? `current`
+                                                    : ''
+                                            }`}
+                                        >
+                                            en
+                                        </div>
+                                    </Button>
                                     {/* <Typography class="subTitle">Die Stimme eines Flusses
                   
                   </Typography> */}
@@ -100,24 +124,6 @@ const Header = () => {
                         }}
                         display={{ xs: 'none', lg: 'flex' }}
                     >
-                        <Button onClick={() => handleLocale('de')}>
-                            <div
-                                className={`menuLink ${
-                                    router.locale == 'de' ? `current` : ''
-                                }`}
-                            >
-                                de
-                            </div>
-                        </Button>
-                        <Button onClick={() => handleLocale('en-US')}>
-                            <div
-                                className={`menuLink ${
-                                    router.locale == 'en-US' ? `current` : ''
-                                }`}
-                            >
-                                en
-                            </div>
-                        </Button>
                         <Link href='/'>
                             <a
                                 className={`menuLink ${
@@ -214,7 +220,7 @@ const Header = () => {
                                     setOpen(false);
                                 }}
                             >
-                                Karte
+                                {locale == 'de' ? 'Karte' : 'Map'}
                             </a>
                         </Link>
 
@@ -230,7 +236,7 @@ const Header = () => {
                                     setOpen(false);
                                 }}
                             >
-                                Geschichte
+                                {locale == 'de' ? 'Geschichte' : 'History'}
                             </a>
                         </Link>
                         <Link href='/aktuelles'>
@@ -245,7 +251,7 @@ const Header = () => {
                                     setOpen(false);
                                 }}
                             >
-                                Aktuelles
+                                {locale == 'de' ? 'Aktuelles' : 'News'}
                             </a>
                         </Link>
                         <Link href='/visionen'>
@@ -260,7 +266,7 @@ const Header = () => {
                                     setOpen(false);
                                 }}
                             >
-                                VISIONEN
+                                {locale == 'de' ? 'Visionen' : 'Visions'}
                             </a>
                         </Link>
                         <Link href='/info'>
@@ -273,7 +279,7 @@ const Header = () => {
                                     setOpen(false);
                                 }}
                             >
-                                info
+                                Info
                             </a>
                         </Link>
                     </Box>
