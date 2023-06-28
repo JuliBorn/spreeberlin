@@ -12,13 +12,14 @@ import {
     Grid,
     Toolbar,
     Typography,
+    Button,
 } from '@mui/material';
 
 import Link from 'next/link';
 import Image from 'next/image';
 
 const Header = () => {
-    const { locale } = useRouter();
+    const { locale, push } = useRouter();
 
     const router = useRouter();
     //const [menuVisible, setMenuVisible] = useState(true);
@@ -27,6 +28,16 @@ const Header = () => {
     //console.log('Header', router.query);
     const handleClose = () => {
         setOpen(false);
+    };
+
+    const handleLocale = (l) => {
+        console.log('locale: ', l);
+        if (l == 'de') {
+            push(router.asPath, undefined, { locale: l });
+        }
+        if (l == 'en-US') {
+            push(router.asPath, undefined, { locale: l });
+        }
     };
     return (
         <>
@@ -89,6 +100,24 @@ const Header = () => {
                         }}
                         display={{ xs: 'none', lg: 'flex' }}
                     >
+                        <Button onClick={() => handleLocale('de')}>
+                            <div
+                                className={`menuLink ${
+                                    router.locale == 'de' ? `current` : ''
+                                }`}
+                            >
+                                de
+                            </div>
+                        </Button>
+                        <Button onClick={() => handleLocale('en-US')}>
+                            <div
+                                className={`menuLink ${
+                                    router.locale == 'en-US' ? `current` : ''
+                                }`}
+                            >
+                                en
+                            </div>
+                        </Button>
                         <Link href='/'>
                             <a
                                 className={`menuLink ${
