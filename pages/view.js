@@ -5,19 +5,19 @@ import dynamic from "next/dynamic";
 // import { Unity, useUnityContext } from 'react-unity-webgl';
 // import { UnityAR } from "../components/UnityAR";
 
-const UnityAR = dynamic(() => import('../components/UnityAR'), {
+const View = dynamic(() => import('../components/UnityView'), {
     ssr: false,
 });
 
-const AR = ({ data }) => {
+const VirtualView = ({ data }) => {
     // const { name } = router.query;
 
 
     return (
         <>
-            <UnityAR />
+            <UnityView />
         </>
     );
 };
 
-export default AR;
+export default View;

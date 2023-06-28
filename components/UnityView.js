@@ -3,7 +3,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import { useRouter } from 'next/router'
 import { Unity, useUnityContext, unload } from 'react-unity-webgl';
 
-const UnityAR = () => {
+const UnityView = () => {
     const { unityProvider, isLoaded, unload } = useUnityContext({
         loaderUrl: 'Build/SpreewithoutAR.loader.js',
         dataUrl: 'Build/SpreewithoutAR.data',
@@ -55,4 +55,4 @@ const UnityAR = () => {
     );
 };
 
-export default UnityAR;
+export default UnityView;
