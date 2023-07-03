@@ -13,6 +13,7 @@ import { Typography } from '@mui/material';
 
 export default function Artikel(props) {
     const router = useRouter();
+    const { locale } = useRouter();
     //console.log(router.pathname.slice(0, 11));
 
     const [moreOpen, setMoreOpen] = useState(false);
