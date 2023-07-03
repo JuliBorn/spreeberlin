@@ -129,13 +129,13 @@ export async function getServerSideProps(context) {
             moreType = 'aktuelles';
         } else if (context.locale == 'en-US') {
             article = await prisma.geschichte_en.findMany();
-            moreCount = await prisma.aktuelles.count();
+            moreCount = await prisma.aktuelles_en.count();
             const skip = Math.floor(Math.random() * moreCount);
-            moreArticle = await prisma.aktuelles.findMany({
+            moreArticle = await prisma.aktuelles_en.findMany({
                 skip: skip,
                 take: 3,
             });
-            moreType = 'aktuelles_en';
+            moreType = 'aktuelles';
         }
     }
 
@@ -157,7 +157,7 @@ export async function getServerSideProps(context) {
                 skip: skip,
                 take: 3,
             });
-            moreType = 'visionen_en';
+            moreType = 'visionen';
         }
     }
 
@@ -179,7 +179,7 @@ export async function getServerSideProps(context) {
                 skip: skip,
                 take: 3,
             });
-            moreType = 'geschichte_en';
+            moreType = 'geschichte';
         }
     }
 

@@ -22,7 +22,7 @@ export default function Artikel(props) {
         //console.log('content type udated');
 
         setMoreOpen(false);
-    }, [router.asPath]);
+    }, [router.asPath]);    
 
     return (
         <>
