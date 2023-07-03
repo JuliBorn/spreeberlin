@@ -37,19 +37,19 @@ export default function Geschichte(props) {
             ></Box>
             {router.query.type == 'geschichte' && (
                 <h1 className='heading-3'>
-                    {locale == 'de' ? 'GESCHICHTE' : 'HISTORY'}
+                    {router.locale == 'de' ? 'GESCHICHTE' : 'HISTORY'}
                 </h1>
             )}
             {router.query.type == 'aktuelles' && (
                 <h1 className='heading-3'>
                     {' '}
-                    {locale == 'de' ? 'AKTUELLES' : 'NEWS'}
+                    {router.locale == 'de' ? 'AKTUELLES' : 'NEWS'}
                 </h1>
             )}
             {router.query.type == 'visionen' && (
                 <h1 className='heading-3'>
                     {' '}
-                    {locale == 'de' ? 'VISIONEN' : 'VISIONS'}
+                    {router.locale == 'de' ? 'VISIONEN' : 'VISIONS'}
                 </h1>
             )}
             <Box display='flex' alignItems='center' margin={2}>
@@ -78,7 +78,7 @@ export default function Geschichte(props) {
                         setMoreOpen(!moreOpen);
                     }}
                 >
-                    WEITERES
+                   {locale == 'de' ? 'WEITERES' : 'MORE'}  
                 </div>
                 <div className='mySpacer'></div>
             </div>
@@ -118,36 +118,69 @@ export async function getServerSideProps(context) {
     let moreType = '';
 
     if (context.query.type == 'geschichte') {
-        article = await prisma.geschichte.findMany();
-        moreCount = await prisma.aktuelles.count();
-        const skip = Math.floor(Math.random() * moreCount);
-        moreArticle = await prisma.aktuelles.findMany({
-            skip: skip,
-            take: 3,
-        });
-        moreType = 'aktuelles';
+        if (context.locale == 'de') {
+            article = await prisma.geschichte.findMany();
+            moreCount = await prisma.aktuelles.count();
+            const skip = Math.floor(Math.random() * moreCount);
+            moreArticle = await prisma.aktuelles.findMany({
+                skip: skip,
+                take: 3,
+            });
+            moreType = 'aktuelles';
+        } else if (context.locale == 'en-US') {
+            article = await prisma.geschichte_en.findMany();
+            moreCount = await prisma.aktuelles.count();
+            const skip = Math.floor(Math.random() * moreCount);
+            moreArticle = await prisma.aktuelles.findMany({
+                skip: skip,
+                take: 3,
+            });
+            moreType = 'aktuelles_en';
+        }
     }
 
     if (context.query.type == 'aktuelles') {
-        article = await prisma.aktuelles.findMany();
-        moreCount = await prisma.visionen.count();
-        const skip = Math.floor(Math.random() * moreCount);
-        moreArticle = await prisma.visionen.findMany({
-            skip: skip,
-            take: 3,
-        });
-        moreType = 'visionen';
+        if (context.locale == 'de') {
+            article = await prisma.aktuelles.findMany();
+            moreCount = await prisma.visionen.count();
+            const skip = Math.floor(Math.random() * moreCount);
+            moreArticle = await prisma.visionen.findMany({
+                skip: skip,
+                take: 3,
+            });
+            moreType = 'visionen';
+        } else if (context.locale == 'en-US') {
+            article = await prisma.aktuelles_en.findMany();
+            moreCount = await prisma.visionen_en.count();
+            const skip = Math.floor(Math.random() * moreCount);
+            moreArticle = await prisma.visionen_en.findMany({
+                skip: skip,
+                take: 3,
+            });
+            moreType = 'visionen_en';
+        }
     }
 
     if (context.query.type == 'visionen') {
-        article = await prisma.visionen.findMany();
-        moreCount = await prisma.geschichte.count();
-        const skip = Math.floor(Math.random() * moreCount);
-        moreArticle = await prisma.geschichte.findMany({
-            skip: skip,
-            take: 3,
-        });
-        moreType = 'geschichte';
+        if (context.locale == 'de') {
+            article = await prisma.visionen.findMany();
+            moreCount = await prisma.geschichte.count();
+            const skip = Math.floor(Math.random() * moreCount);
+            moreArticle = await prisma.geschichte.findMany({
+                skip: skip,
+                take: 3,
+            });
+            moreType = 'geschichte';
+        } else if (context.locale == 'en-US') {
+            article = await prisma.visionen_en.findMany();
+            moreCount = await prisma.geschichte_en.count();
+            const skip = Math.floor(Math.random() * moreCount);
+            moreArticle = await prisma.geschichte_en.findMany({
+                skip: skip,
+                take: 3,
+            });
+            moreType = 'geschichte_en';
+        }
     }
 
     const posts = JSON.parse(JSON.stringify(article.reverse()));

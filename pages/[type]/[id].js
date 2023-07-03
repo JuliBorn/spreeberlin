@@ -95,7 +95,7 @@ export default function Artikel(props) {
                     setMoreOpen(!moreOpen);
                 }}
             >
-                WEITERES
+                {locale == 'de' ? 'WEITERES' : 'MORE'}
             </div>
             {moreOpen && (
                 <Box display='flex' alignItems='center' m={1}>
@@ -136,63 +136,123 @@ export async function getServerSideProps(context) {
     let moreType = '';
 
     if (context.query.type == 'geschichte') {
-        article = await prisma.geschichte.findMany({
-            where: { id: parseInt(context.query.id) },
-        });
-        images = await prisma.images.findMany({
-            where: {
-                type: 'geschichte',
-                article_id: parseInt(context.query.id),
-            },
-        });
-        moreCount = await prisma.aktuelles.count();
-        const skip = Math.floor(Math.random() * moreCount);
+        if (context.locale == 'de') {
+            article = await prisma.geschichte.findMany({
+                where: { id: parseInt(context.query.id) },
+            });
+            images = await prisma.images.findMany({
+                where: {
+                    type: 'geschichte',
+                    article_id: parseInt(context.query.id),
+                },
+            });
+            moreCount = await prisma.aktuelles.count();
+            const skip = Math.floor(Math.random() * moreCount);
 
-        moreArticle = await prisma.aktuelles.findMany({
-            skip: skip,
-            take: 3,
-        });
-        moreType = 'aktuelles';
+            moreArticle = await prisma.aktuelles.findMany({
+                skip: skip,
+                take: 3,
+            });
+            moreType = 'aktuelles';
+        } else if (context.locale == 'en-US') {
+            article = await prisma.geschichte_en.findMany({
+                where: { id: parseInt(context.query.id) },
+            });
+            images = await prisma.images.findMany({
+                where: {
+                    type: 'geschichte',
+                    article_id: parseInt(context.query.id),
+                },
+            });
+            moreCount = await prisma.aktuelles_en.count();
+            const skip = Math.floor(Math.random() * moreCount);
+
+            moreArticle = await prisma.aktuelles_en.findMany({
+                skip: skip,
+                take: 3,
+            });
+            moreType = 'aktuelles';
+        }
     }
 
     if (context.query.type == 'aktuelles') {
-        article = await prisma.aktuelles.findMany({
-            where: { id: parseInt(context.query.id) },
-        });
-        images = await prisma.images.findMany({
-            where: {
-                type: 'aktuelles',
-                article_id: parseInt(context.query.id),
-            },
-        });
-        moreCount = await prisma.visionen.count();
-        const skip = Math.floor(Math.random() * moreCount);
+        if (context.locale == 'de') {
+            article = await prisma.aktuelles.findMany({
+                where: { id: parseInt(context.query.id) },
+            });
+            images = await prisma.images.findMany({
+                where: {
+                    type: 'aktuelles',
+                    article_id: parseInt(context.query.id),
+                },
+            });
+            moreCount = await prisma.visionen.count();
+            const skip = Math.floor(Math.random() * moreCount);
 
-        moreArticle = await prisma.visionen.findMany({
-            skip: skip,
-            take: 3,
-        });
-        moreType = 'visionen';
+            moreArticle = await prisma.visionen.findMany({
+                skip: skip,
+                take: 3,
+            });
+            moreType = 'visionen';
+        } else if (context.locale == 'en-US') {
+            article = await prisma.aktuelles_en.findMany({
+                where: { id: parseInt(context.query.id) },
+            });
+            images = await prisma.images.findMany({
+                where: {
+                    type: 'aktuelles',
+                    article_id: parseInt(context.query.id),
+                },
+            });
+            moreCount = await prisma.visionen_en.count();
+            const skip = Math.floor(Math.random() * moreCount);
+
+            moreArticle = await prisma.visionen_en.findMany({
+                skip: skip,
+                take: 3,
+            });
+            moreType = 'visionen';
+        }
     }
 
     if (context.query.type == 'visionen') {
-        article = await prisma.visionen.findMany({
-            where: { id: parseInt(context.query.id) },
-        });
-        images = await prisma.images.findMany({
-            where: {
-                type: 'visionen',
-                article_id: parseInt(context.query.id),
-            },
-        });
-        moreCount = await prisma.geschichte.count();
-        const skip = Math.floor(Math.random() * moreCount);
+        if (context.locale == 'de') {
+            article = await prisma.visionen.findMany({
+                where: { id: parseInt(context.query.id) },
+            });
+            images = await prisma.images.findMany({
+                where: {
+                    type: 'visionen',
+                    article_id: parseInt(context.query.id),
+                },
+            });
+            moreCount = await prisma.geschichte.count();
+            const skip = Math.floor(Math.random() * moreCount);
 
-        moreArticle = await prisma.geschichte.findMany({
-            skip: skip,
-            take: 3,
-        });
-        moreType = 'geschichte';
+            moreArticle = await prisma.geschichte.findMany({
+                skip: skip,
+                take: 3,
+            });
+            moreType = 'geschichte';
+        } else if (context.locale == 'en-US') {
+            article = await prisma.visionen_en.findMany({
+                where: { id: parseInt(context.query.id) },
+            });
+            images = await prisma.images.findMany({
+                where: {
+                    type: 'visionen',
+                    article_id: parseInt(context.query.id),
+                },
+            });
+            moreCount = await prisma.geschichte_en.count();
+            const skip = Math.floor(Math.random() * moreCount);
+
+            moreArticle = await prisma.geschichte_en.findMany({
+                skip: skip,
+                take: 3,
+            });
+            moreType = 'geschichte';
+        }
     }
 
     const post = article[0];
