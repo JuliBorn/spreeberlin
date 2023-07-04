@@ -78,7 +78,7 @@ export default function Geschichte(props) {
                         setMoreOpen(!moreOpen);
                     }}
                 >
-                   {locale == 'de' ? 'WEITERES' : 'MORE'}  
+                    {locale == 'de' ? 'WEITERES' : 'MORE'}
                 </div>
                 <div className='mySpacer'></div>
             </div>
