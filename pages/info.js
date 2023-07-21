@@ -47,7 +47,9 @@ export default function Info(props) {
                     onChange={handleAccordionChange('panel1')}
                 >
                     <AccordionSummary elevation={0}>
-                        <p className='infoAccordionText'>INFO</p>
+                        <p className='infoAccordionText'>
+                            {router.locale == 'de' ? 'INFO' : 'INFO'}
+                        </p>
                     </AccordionSummary>
                     <AccordionDetails elevation={0}>
                         <Grid container spacing={1}>
@@ -111,12 +113,19 @@ export default function Info(props) {
                     TransitionProps={{ unmountOnExit: true }}
                 >
                     <AccordionSummary elevation={0}>
-                        <p className='infoAccordionText'>RELEVANZ</p>
+                        <p className='infoAccordionText'>
+                            {router.locale == 'de' ? 'RELEVANZ' : 'RELEVANCE'}
+                        </p>
                     </AccordionSummary>
                     <AccordionDetails elevation={0}>
                         <Box>
                             <Grid container spacing={1}>
-                                <Grid xs={12} lg={4} className='flowing-text'>
+                                <Grid
+                                    item
+                                    xs={12}
+                                    lg={4}
+                                    className='flowing-text'
+                                >
                                     <p>
                                         {router.locale == 'de' &&
                                             infoText.relevanz.de}
@@ -228,7 +237,9 @@ export default function Info(props) {
                     TransitionProps={{ unmountOnExit: true }}
                 >
                     <AccordionSummary elevation={0}>
-                        <p className='infoAccordionText'>BOJEN</p>
+                        <p className='infoAccordionText'>
+                            {router.locale == 'de' ? 'BOJEN' : 'BUOYS'}
+                        </p>
                     </AccordionSummary>
                     <AccordionDetails elevation={0}>
                         <Grid container spacing={1}>
@@ -287,7 +298,11 @@ export default function Info(props) {
                     TransitionProps={{ unmountOnExit: true }}
                 >
                     <AccordionSummary>
-                        <p className='infoAccordionText'>OPEN SOURCE</p>
+                        <p className='infoAccordionText'>
+                            {router.locale == 'de'
+                                ? 'OPEN SOURCE'
+                                : 'OPEN SOURCE'}
+                        </p>
                     </AccordionSummary>
                     <AccordionDetails elevation={0}>
                         <Grid container spacing={1}>
@@ -429,7 +444,10 @@ export default function Info(props) {
                     TransitionProps={{ unmountOnExit: true }}
                 >
                     <AccordionSummary>
-                        <p className='infoAccordionText'>KONTAKT</p>
+              
+                        <p className='infoAccordionText'>
+                            {router.locale == 'de' ? 'KONTAKT' : 'CONTACT'}
+                        </p>
                     </AccordionSummary>
                     <AccordionDetails elevation={0}>
                         <Box
@@ -486,7 +504,9 @@ export default function Info(props) {
                     TransitionProps={{ unmountOnExit: true }}
                 >
                     <AccordionSummary>
-                        <p className='infoAccordionText'>IMPRESSUM</p>
+                        <p className='infoAccordionText'>
+                            {router.locale == 'de' ? 'IMPRESSUM' : 'IMPRINT'}
+                        </p>
                     </AccordionSummary>
                     <AccordionDetails elevation={0}>
                         <div>

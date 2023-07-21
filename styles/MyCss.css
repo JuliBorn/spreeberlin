@@ -604,12 +604,25 @@ body {
     text-align: center;
     text-transform: uppercase;
 }
-
+.menuLinkLocale {
+    padding-left: 10px;
+    flex: 0 auto;
+    font-family: Peakrounded, sans-serif;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    min-width: none;
+}
 .menuLink.current {
     color: #00ff48;
     text-decoration: underline;
 }
-
+.menuLinkLocale.current {
+    color: #00ff48;
+    text-decoration: underline;
+}
 .youtubePlayer {
 }
 

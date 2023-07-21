@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import Header from './Header';
-import HeaderBar from './HeaderBar';
+
 import Footer from './Footer';
 
 import AppBar from '@mui/material/AppBar';

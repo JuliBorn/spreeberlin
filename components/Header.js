@@ -32,18 +32,19 @@ const Header = () => {
 
     const handleLocale = (l) => {
         console.log('locale: ', l);
+        console.log('router: ', router.asPath);
         if (l == 'de') {
-            push(router.asPath, undefined, { locale: l });
+            push(router.asPath, router.asPath, { locale: l });
         }
         if (l == 'en-US') {
-            push(router.asPath, undefined, { locale: l });
+            push(router.asPath, router.asPath, { locale: l });
         }
     };
     return (
         <>
             <AppBar
                 sx={{
-                    zIndex: 2100,
+                    zindex: 2100,
                     backgroundColor: '#2473FF',
 
                     //   minHeight: '22vh',
@@ -64,7 +65,7 @@ const Header = () => {
                             <a>
                                 <Box
                                     sx={{
-                                        zIndex: 2000,
+                                        zindex: 2000,
                                         //marginleft:64,
                                         marginTop: 'auto',
                                         marginBottom: 'auto',
@@ -79,11 +80,11 @@ const Header = () => {
                                         //height='80px'
                                         alt=''
                                         className='logo-image'
-                                        zIndex={1000000}
+                                        zindex={1000000}
                                     ></img>
                                     <Button onClick={() => handleLocale('de')}>
                                         <div
-                                            className={`menuLink ${
+                                            className={`menuLinkLocale ${
                                                 router.locale == 'de'
                                                     ? `current`
                                                     : ''
@@ -96,7 +97,7 @@ const Header = () => {
                                         onClick={() => handleLocale('en-US')}
                                     >
                                         <div
-                                            className={`menuLink ${
+                                            className={`menuLinkLocale ${
                                                 router.locale == 'en-US'
                                                     ? `current`
                                                     : ''
@@ -118,7 +119,7 @@ const Header = () => {
                             //marginTop: '32px',
                             marginRight: '16px',
                             //marginBottom: '24px',
-                            zIndex: 1000,
+                            zindex: 1000,
                             bottom: '0px',
                             alignItems: 'center',
                         }}
@@ -155,7 +156,6 @@ const Header = () => {
                                 {locale == 'de' ? 'AKTUELLES' : 'NEWS'}
                             </a>
                         </Link>
-
                         <Link href='/visionen'>
                             <a
                                 className={`menuLink ${
@@ -175,6 +175,15 @@ const Header = () => {
                             >
                                 {locale == 'de' ? 'INFO' : 'INFO'}
                             </a>
+                        </Link>{' '}
+                        <Link href='/view'>
+                            <a
+                                className={`menuLink ${
+                                    router.pathname == '/view' ? `current` : ''
+                                }`}
+                            >
+                                {locale == 'de' ? '3D' : '3D'}
+                            </a>
                         </Link>
                     </Box>
 
@@ -184,7 +193,7 @@ const Header = () => {
                             marginTop: 'auto',
                             marginBottom: 'auto',
                             marginRight: '16px',
-                            zIndex: 1000000,
+                            zindex: 1000000,
                         }}
                     >
                         <Hamburger toggled={isOpen} toggle={setOpen} />
@@ -195,7 +204,7 @@ const Header = () => {
                     sx={{
                         color: '#fff',
                         backgroundColor: 'rgba(36, 115, 255, 1)',
-                        zIndex: -1,
+                        zindex: -1,
                     }}
                     open={isOpen}
                     onClick={handleClose}
@@ -223,7 +232,6 @@ const Header = () => {
                                 {locale == 'de' ? 'Karte' : 'Map'}
                             </a>
                         </Link>
-
                         <Link href='/geschichte'>
                             <a
                                 href='/static/history/geschichte.html'
@@ -280,6 +288,18 @@ const Header = () => {
                                 }}
                             >
                                 Info
+                            </a>
+                        </Link>
+                        <Link href='/view'>
+                            <a
+                                className={`mobileMenuLink  ${
+                                    router.asPath == '/view' ? `current` : ''
+                                }`}
+                                onClick={() => {
+                                    setOpen(false);
+                                }}
+                            >
+                                {locale == 'de' ? '3D' : '3D'}
                             </a>
                         </Link>
                     </Box>
