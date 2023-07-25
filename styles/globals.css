@@ -73,7 +73,6 @@ p {
     font-size: 15px;
 }
 
-
 blockquote {
     margin-bottom: 1em;
     padding: 1em 2em;
@@ -341,8 +340,6 @@ blockquote {
     -ms-grid-rows: auto auto;
     grid-template-rows: auto auto;
 }
-
-
 
 .logo-img-mobile {
     display: block;
@@ -785,7 +782,7 @@ blockquote {
     z-index: 200;
     max-width: 450px;
     margin-bottom: 100px;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 .map-control {
@@ -907,12 +904,6 @@ blockquote {
     margin-top: 125px;
     background-color: #2473ff;
 } */
-
-
-
-
-
-
 
 .heading-5 {
     font-family: Edumaxisharp, sans-serif;
@@ -1049,8 +1040,6 @@ blockquote {
     max-width: 680px;
     font-weight: 400;
 }
-
-
 
 .container-3 {
     max-width: 100%;
@@ -1634,8 +1623,6 @@ blockquote {
         font-weight: 400;
     }
 
-
-
     .brand-3 {
         display: none;
     }
@@ -1826,7 +1813,6 @@ blockquote {
         left: 0px;
     }
 
-
     .footer {
         padding: 40px 20px;
     }
@@ -2011,8 +1997,6 @@ blockquote {
         width: 110px;
         height: 110px;
     }
-
-
 
     .mobile-logo.w--current {
         width: 250px;

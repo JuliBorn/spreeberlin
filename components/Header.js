@@ -82,30 +82,7 @@ const Header = () => {
                                         className='logo-image'
                                         zindex={1000000}
                                     ></img>
-                                    <Button onClick={() => handleLocale('de')}>
-                                        <div
-                                            className={`menuLinkLocale ${
-                                                router.locale == 'de'
-                                                    ? `current`
-                                                    : ''
-                                            }`}
-                                        >
-                                            de
-                                        </div>
-                                    </Button>
-                                    <Button
-                                        onClick={() => handleLocale('en-US')}
-                                    >
-                                        <div
-                                            className={`menuLinkLocale ${
-                                                router.locale == 'en-US'
-                                                    ? `current`
-                                                    : ''
-                                            }`}
-                                        >
-                                            en
-                                        </div>
-                                    </Button>
+
                                     {/* <Typography class="subTitle">Die Stimme eines Flusses
                   
                   </Typography> */}
@@ -220,6 +197,28 @@ const Header = () => {
                             height: '100%',
                         }}
                     >
+                        <div className='localeContainer'>
+                            <Button onClick={() => handleLocale('de')}>
+                                <div
+                                    className={`menuLinkLocale ${
+                                        router.locale == 'de' ? `current` : ''
+                                    }`}
+                                >
+                                    de
+                                </div>
+                            </Button>
+                            <Button onClick={() => handleLocale('en-US')}>
+                                <div
+                                    className={`menuLinkLocale ${
+                                        router.locale == 'en-US'
+                                            ? `current`
+                                            : ''
+                                    }`}
+                                >
+                                    en
+                                </div>
+                            </Button>
+                        </div>
                         <Link href='/'>
                             <a
                                 className={`mobileMenuLink  ${
