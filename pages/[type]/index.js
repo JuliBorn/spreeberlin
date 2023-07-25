@@ -57,7 +57,7 @@ export default function Geschichte(props) {
                     {props.posts.map((item) => {
                         return (
                             <>
-                                <Grid item xs={12} md={4}>
+                                <Grid item xs={12} md={4} key={item.name}>
                                     <Article
                                         name={item.name}
                                         pic_url={item.pic_url}
@@ -88,7 +88,7 @@ export default function Geschichte(props) {
                         {props.more.map((item) => {
                             return (
                                 <>
-                                    <Grid item xs={12} md={4}>
+                                    <Grid item xs={12} md={4} key={item.name}>
                                         <Article
                                             name={item.name}
                                             pic_url={item.pic_url}

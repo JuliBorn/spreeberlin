@@ -9,15 +9,5 @@ const View = dynamic(() => import('../components/UnityView'), {
     ssr: false,
 });
 
-const VirtualView = ({ data }) => {
-    // const { name } = router.query;
-
-
-    return (
-        <>
-            <UnityView />
-        </>
-    );
-};
 
 export default View;

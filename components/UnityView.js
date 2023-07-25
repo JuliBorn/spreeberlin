@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
 import { Unity, useUnityContext, unload } from 'react-unity-webgl';
 
 const UnityView = () => {
@@ -11,6 +11,7 @@ const UnityView = () => {
         codeUrl: 'Build/SpreewithoutAR.wasm',
     });
     const router = useRouter();
+    const { locale } = useRouter();
     const bypassConfirmationRef = useRef(false);
 
     useEffect(() => {
@@ -23,8 +24,9 @@ const UnityView = () => {
                         bypassConfirmationRef.current = true;
                         //console.log("quitting done?", router)
                         //console.log("quitting done?", url)
-                        router.push(url)
-                        
+                        router.push(router.asPath, router.asPath, {
+                            locale: false,
+                        });
                     })
                     .catch((e) => console.log(e));
             }
@@ -33,7 +35,6 @@ const UnityView = () => {
 
             router.events.emit('routeChangeError');
             throw 'Quitting please wait.';
-            
         };
 
         router.events.on('routeChangeStart', handleBrowseAway);
