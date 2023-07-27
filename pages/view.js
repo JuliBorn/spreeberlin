@@ -7,6 +7,7 @@ import dynamic from "next/dynamic";
 
 const View = dynamic(() => import('../components/UnityView'), {
     ssr: false,
+   locale: 'en-US',
 });
 
 

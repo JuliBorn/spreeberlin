@@ -3,7 +3,7 @@ const infoText = {
         'de': `Im Kontext der Klimakrise und des damit einhergehenden
         gesellschaftlichen Wandels untersucht das Projekt die
         Beziehung zwischen Berlin und der Spree, dem städtischen Raum,
-        den Bürgern und dem Gewässer. Wie kann dem Fluss eine eigene
+        den Bürgern und dem Gewässer.  <br\> Wie kann dem Fluss eine eigene
         "politische" Stimme gegeben werden und was kann dazu
         beitragen, mehr Bewusstsein für die Spree und den Einfluss des
         Menschen zu schaffen? Mit Hilfe der Bojen macht das Gewässer

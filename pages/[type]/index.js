@@ -56,17 +56,15 @@ export default function Geschichte(props) {
                 <Grid container spacing={1}>
                     {props.posts.map((item) => {
                         return (
-                            <>
-                                <Grid item xs={12} md={4} key={item.name}>
-                                    <Article
-                                        name={item.name}
-                                        pic_url={item.pic_url}
-                                        subheading1={item.subheading1}
-                                        subheading2={item.subheading2}
-                                        link={`/${router.query.type}/${item.id}`}
-                                    />
-                                </Grid>
-                            </>
+                            <Grid item xs={12} md={4} key={item.name}>
+                                <Article
+                                    name={item.name}
+                                    pic_url={item.pic_url}
+                                    subheading1={item.subheading1}
+                                    subheading2={item.subheading2}
+                                    link={`/${router.query.type}/${item.id}`}
+                                />
+                            </Grid>
                         );
                     })}
                 </Grid>{' '}
@@ -87,17 +85,15 @@ export default function Geschichte(props) {
                     <Grid container spacing={1}>
                         {props.more.map((item) => {
                             return (
-                                <>
-                                    <Grid item xs={12} md={4} key={item.name}>
-                                        <Article
-                                            name={item.name}
-                                            pic_url={item.pic_url}
-                                            subheading1={item.subheading1}
-                                            subheading2={item.subheading2}
-                                            link={`/${props.moreType}/${item.id}`}
-                                        />
-                                    </Grid>
-                                </>
+                                <Grid item xs={12} md={4} key={item.name}>
+                                    <Article
+                                        name={item.name}
+                                        pic_url={item.pic_url}
+                                        subheading1={item.subheading1}
+                                        subheading2={item.subheading2}
+                                        link={`/${props.moreType}/${item.id}`}
+                                    />
+                                </Grid>
                             );
                         })}
                     </Grid>

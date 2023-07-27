@@ -18,15 +18,14 @@ const UnityView = () => {
         const shouldByPassconfimation = () => bypassConfirmationRef.current;
 
         const handleBrowseAway = (url) => {
+            //console.log("locale in unityview"  , locale)
             if (isLoaded) {
                 unload()
                     .then(() => {
                         bypassConfirmationRef.current = true;
                         //console.log("quitting done?", router)
                         //console.log("quitting done?", url)
-                        router.push(router.asPath, router.asPath, {
-                            locale: false,
-                        });
+                        router.push(url);
                     })
                     .catch((e) => console.log(e));
             }

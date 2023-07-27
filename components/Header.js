@@ -193,7 +193,7 @@ const Header = () => {
                             flexDirection: 'column',
                             justifyContent: 'space-between',
                             paddingBottom: '18vh',
-                            paddingTop: '12vh',
+                            paddingTop: '2vh',
                             height: '100%',
                         }}
                     >
