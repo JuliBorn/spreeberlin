@@ -3294,6 +3294,17 @@ blockquote {
     padding-bottom: 0px;
 }
 
+.info-text {
+    max-width: 100%;
+    margin-bottom: 20px;
+    font-family: Peakrounded, sans-serif;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: left;
+    white-space: pre;
+}
+
 .flowing-text {
     max-width: 100%;
     margin-bottom: 20px;
