@@ -1,6 +1,12 @@
 a {
     text-decoration: none;
 }
+
+.logo-image {
+    max-width: 100%;
+    /* margin: auto; */
+}
+
 .AR {
     width: 100%;
     height: 600px;
@@ -611,7 +617,7 @@ body {
     width: 100vw;
     display: flex;
     justify-content: flex-end;
-    /* border: red solid 1px; */    
+    /* border: red solid 1px; */
 }
 .menuLinkLocale {
     position: absolute;
@@ -647,6 +653,12 @@ body {
     color: white;
     padding-left: 10px;
 }
+@media screen and (min-width: 972px) {
+    .logo-image {
+        max-width: 100%;
+        margin-top: 0px;
+    }
+}
 @media screen and (max-width: 767px) {
     .youtubePlayer {
         max-width: 100%;
@@ -654,6 +666,7 @@ body {
     }
     .logo-image {
         max-width: 100%;
+        margin-top: 0px;
     }
     .myMenu {
         /* border: red solid 5px; */

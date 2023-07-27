@@ -54,7 +54,7 @@ export default function Info(props) {
                     <AccordionDetails elevation={0}>
                         <Grid container spacing={1}>
                             <Grid item xs={12} lg={4}>
-                                <p className='flowing-text'>
+                                <p className='info-text'>
                                     {router.locale == 'de' && infoText.info.de}
                                     {router.locale == 'en-US' &&
                                         infoText.info.en}
@@ -76,7 +76,7 @@ export default function Info(props) {
                                     </Box>
                                 </Box>
                             </Grid>
-                            <Grid item xs={12} lg={4} className='flowing-text'>
+                            <Grid item xs={12} lg={4} className='info-text'>
                                 <Box mb={1} p={8}>
                                     <img
                                         src='/static/images/HC-PCDesign-p-500.png'
@@ -124,9 +124,9 @@ export default function Info(props) {
                                     item
                                     xs={12}
                                     lg={4}
-                                    className='flowing-text'
+                                  
                                 >
-                                    <p>
+                                    <p   className='info-text'>
                                         {router.locale == 'de' &&
                                             infoText.relevanz.de}
                                         {router.locale == 'en-US' &&
@@ -137,7 +137,7 @@ export default function Info(props) {
                                     item
                                     xs={12}
                                     lg={4}
-                                    className='flowing-text'
+                                    className='info-text'
                                 >
                                     <Box mb={1}>
                                         <img
@@ -246,10 +246,11 @@ export default function Info(props) {
                             <Grid item xs={12} lg={8} className='flowing-text'>
                                 <Grid container spacing={1}>
                                     <Grid item xs={12} lg={6}>
+                                        <p className='info-text'>
                                         {router.locale == 'de' &&
                                             infoText.bojen.de}
                                         {router.locale == 'en-US' &&
-                                            infoText.bojen.en}
+                                            infoText.bojen.en}</p>
                                     </Grid>
                                     <Grid item xs={12} lg={6}>
                                         <img

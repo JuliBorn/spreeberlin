@@ -70,7 +70,12 @@ const Header = () => {
                                         marginTop: 'auto',
                                         marginBottom: 'auto',
                                         paddingTop: 4,
-                                        paddingBottom: 2,
+                                        paddingBottom: 4,
+                                        display: 'flex',
+                                        flexDirection: 'column',
+                                      
+                                        justifyContent: 'center',
+                                        
                                     }}
                                 >
                                     <img

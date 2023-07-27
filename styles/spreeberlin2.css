@@ -3302,7 +3302,10 @@ blockquote {
     font-size: 20px;
     font-weight: 300;
     text-align: left;
-    white-space: pre;
+    white-space: pre-line;
+    text-align: justify;
+    padding-right: 8px;
+
 }
 
 .flowing-text {
