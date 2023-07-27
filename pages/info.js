@@ -307,7 +307,7 @@ export default function Info(props) {
                     </AccordionSummary>
                     <AccordionDetails elevation={0}>
                         <Grid container spacing={1}>
-                            <Grid item xs={12} lg={6} className='flowing-text'>
+                            <Grid item xs={12} lg={6} className='info-text'>
                                 <h6>COMING SOON</h6>
                                 {router.locale == 'de' &&
                                     'SpreeBerlin ist Mitglied des'}
@@ -318,12 +318,9 @@ export default function Info(props) {
                                     <a> OpenNext! </a>
                                 </Link>
                                 {router.locale == 'de' &&
-                                    `Formates. Derzeit werden Module für ein Open Source Zugang vorbereitet und schon bald zur
-                                Verfügung gestellt! Das Projekt hat den Anspruch
-                                der Open Source & Open Hardware gedanken zu
-                                verkörpern.`}
+                                    `Formates. \n Derzeit werden Module für ein Open Source Zugang vorbereitet und schon bald zur Verfügung gestellt! Das Projekt hat den Anspruch der Open Source & Open Hardware gedanken zu verkörpern.`}
                                 {router.locale == 'en-US' &&
-                                    `format. Currently, modules for an open-source access are being prepared and will soon be available! The project aims to embody the principles of open-source and open hardware.`}
+                                    `format. \n Currently, modules for an open-source access are being prepared and will soon be available! The project aims to embody the principles of open-source and open hardware.`}
                             </Grid>
                             <Grid item xs={6}></Grid>
                         </Grid>
