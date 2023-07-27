@@ -53,6 +53,22 @@ const options = {
                 time: {
                     unit: 'month',
                 },
+                gridLines: {
+                    color: 'white',
+                },
+                ticks: {
+                    fontColor: 'white', // Set the color of the x-axis text (dates) to white
+                },
+            },
+        ],
+        yAxes: [
+            {
+                gridLines: {
+                    color: 'white',
+                },
+                ticks: {
+                    fontColor: 'white', // Set the color of the y-axis text to white
+                },
             },
         ],
     },
@@ -145,14 +161,12 @@ const Modal = ({ data }) => {
                                     </div>
                                 </div>
                             </div>
-                             
+
                             <Grid container className='buttonContainer'>
-                               
                                 <Grid
                                     // display={'flex'}
                                     item
                                     xs={12}
-        
                                     lg={3}
                                 >
                                     <Button
