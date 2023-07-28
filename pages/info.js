@@ -30,7 +30,7 @@ export default function Info(props) {
         <>
             <Box marginTop={12}>
                 <img
-                    src='/static/images/Stroke-1.svg'
+                    src='/static/images/stroke-1.png'
                     className='myInfoDivider'
                 />
                 <Accordion
@@ -94,7 +94,7 @@ export default function Info(props) {
                     </AccordionDetails>
                 </Accordion>
                 <img
-                    src='/static/images/Stroke-1.svg'
+                    src='/static/images/stroke-1.png'
                     className='myInfoDivider'
                 />
                 <Accordion
@@ -219,7 +219,7 @@ export default function Info(props) {
                     </AccordionDetails>
                 </Accordion>
                 <img
-                    src='/static/images/Stroke-1.svg'
+                    src='/static/images/stroke-1.png'
                     className='myInfoDivider'
                 />
                 <Accordion
@@ -282,7 +282,7 @@ export default function Info(props) {
                     </AccordionDetails>
                 </Accordion>
                 <img
-                    src='/static/images/Stroke-1.svg'
+                    src='/static/images/stroke-1.png'
                     className='myInfoDivider'
                 />
                 <Accordion
@@ -327,7 +327,7 @@ export default function Info(props) {
                     </AccordionDetails>
                 </Accordion>
                 <img
-                    src='/static/images/Stroke-1.svg'
+                    src='/static/images/stroke-1.png'
                     className='myInfoDivider'
                 />
                 <Accordion
@@ -389,7 +389,7 @@ export default function Info(props) {
                     </AccordionDetails>
                 </Accordion>
                 <img
-                    src='/static/images/Stroke-1.svg'
+                    src='/static/images/stroke-1.png'
                     className='myInfoDivider'
                 />
                 <Accordion
@@ -425,7 +425,7 @@ export default function Info(props) {
                 </Accordion>
 
                 <img
-                    src='/static/images/Stroke-1.svg'
+                    src='/static/images/stroke-1.png'
                     className='myInfoDivider'
                 />
                 <Accordion
@@ -485,7 +485,7 @@ export default function Info(props) {
                     </AccordionDetails>
                 </Accordion>
                 <img
-                    src='/static/images/Stroke-1.svg'
+                    src='/static/images/stroke-1.png'
                     className='myInfoDivider'
                 />
                 <Accordion
@@ -548,7 +548,7 @@ export default function Info(props) {
                         </div>
                     </AccordionDetails>
                     <img
-                        src='/static/images/Stroke-1.svg'
+                        src='/static/images/stroke-1.png'
                         className='myInfoDivider'
                     />
                 </Accordion>
