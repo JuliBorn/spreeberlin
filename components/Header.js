@@ -73,9 +73,8 @@ const Header = () => {
                                         paddingBottom: 4,
                                         display: 'flex',
                                         flexDirection: 'column',
-                                      
+
                                         justifyContent: 'center',
-                                        
                                     }}
                                 >
                                     <img
@@ -157,7 +156,7 @@ const Header = () => {
                             >
                                 {locale == 'de' ? 'INFO' : 'INFO'}
                             </a>
-                        </Link>{' '}
+                        </Link>
                         <Link href='/view'>
                             <a
                                 className={`menuLink ${
@@ -167,6 +166,26 @@ const Header = () => {
                                 {locale == 'de' ? '3D' : '3D'}
                             </a>
                         </Link>
+                        <div className='localeContainerDesktop'>
+                            <div
+                                onClick={() => handleLocale('de')}
+                                className={`menuLinkLocaleDesktop ${
+                                    router.locale == 'de' ? `current` : ''
+                                }`}
+                            >
+                                de
+                            </div>
+                            <div className='menuLinkLocaleDesktop'>{` / `}</div>
+
+                            <div
+                                onClick={() => handleLocale('en-US')}
+                                className={`menuLinkLocaleDesktop ${
+                                    router.locale == 'en-US' ? `current` : ''
+                                }`}
+                            >
+                                en
+                            </div>
+                        </div>
                     </Box>
 
                     <Box
@@ -178,7 +197,9 @@ const Header = () => {
                             zindex: 1000000,
                         }}
                     >
-                        <Hamburger toggled={isOpen} toggle={setOpen} />
+                        <div className="hamburger">
+                            <Hamburger toggled={isOpen} toggle={setOpen} />
+                        </div>
                     </Box>
                 </Box>
 
@@ -192,6 +213,24 @@ const Header = () => {
                     onClick={handleClose}
                     display='flex'
                 >
+                    <div className='localeContainer'>
+                        <div
+                            onClick={() => handleLocale('de')}
+                            className={`menuLinkLocale ${
+                                router.locale == 'de' ? `current` : ''
+                            }`}
+                        >
+                            de
+                        </div>
+                        <div
+                            onClick={() => handleLocale('en-US')}
+                            className={`menuLinkLocale ${
+                                router.locale == 'en-US' ? `current` : ''
+                            }`}
+                        >
+                            en
+                        </div>
+                    </div>
                     <Box
                         sx={{
                             display: 'flex',
@@ -202,28 +241,6 @@ const Header = () => {
                             height: '100%',
                         }}
                     >
-                        <div className='localeContainer'>
-                            <Button onClick={() => handleLocale('de')}>
-                                <div
-                                    className={`menuLinkLocale ${
-                                        router.locale == 'de' ? `current` : ''
-                                    }`}
-                                >
-                                    de
-                                </div>
-                            </Button>
-                            <Button onClick={() => handleLocale('en-US')}>
-                                <div
-                                    className={`menuLinkLocale ${
-                                        router.locale == 'en-US'
-                                            ? `current`
-                                            : ''
-                                    }`}
-                                >
-                                    en
-                                </div>
-                            </Button>
-                        </div>
                         <Link href='/'>
                             <a
                                 className={`mobileMenuLink  ${

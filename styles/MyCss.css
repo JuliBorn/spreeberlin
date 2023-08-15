@@ -613,16 +613,23 @@ body {
     text-transform: uppercase;
 }
 .localeContainer {
-    position: relative;
-    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    z-index: 99999;
+    /* border: red solid 1px; */
+}
+.localeContainerDesktop {
     display: flex;
     justify-content: flex-end;
+    flex-direction: row;
+    padding-left: 10px;
     /* border: red solid 1px; */
 }
 .menuLinkLocale {
-    position: absolute;
-    padding-left: 10px;
-
     font-family: Peakrounded, sans-serif;
     color: #fff;
     font-size: 17px;
@@ -630,14 +637,39 @@ body {
     text-align: right;
     text-transform: uppercase;
     min-width: none;
+    cursor: pointer;
+
+    padding-right: 4px;
 }
 .menuLink.current {
+    padding-right: 4px;
     color: #00ff48;
     text-decoration: underline;
 }
 .menuLinkLocale.current {
     color: #00ff48;
     text-decoration: underline;
+}
+.menuLinkLocaleDesktop {
+    font-family: Peakrounded, sans-serif;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+    text-align: right;
+    text-transform: uppercase;
+    min-width: none;
+    cursor: pointer;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+.menuLinkLocaleDesktop.current {
+    color: #00ff48;
+    text-decoration: underline;
+}
+
+.hamburger {
+
+    z-index: 1000000;
 }
 .youtubePlayer {
 }
