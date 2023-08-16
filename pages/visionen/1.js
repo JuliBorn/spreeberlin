@@ -6,18 +6,21 @@ export default function View(props) {
     const router = useRouter();
 
     useEffect(() => {
-
         console.log('3d Page loading', router.query, ' redirecting...');
 
         if (router.query.sphere) {
-            console.log("got query")
-            router.replace(`https://url.adrianstaude.de?sphere=${router.query.sphere}`)
+            console.log('got query');
+            router.replace(
+                `https://url.adrianstaude.de?sphere=${router.query.sphere}`
+            );
+        } else if (!router.query.sphere) {
+            console.log('got no query');
+            if (router.asPath === '/visionen/1') {
+                console.log('visionen/1 home');
+                router.replace(`https://url.adrianstaude.de?sphere=1`)
+            }
+            
         }
-        else if (!router.query.sphere) {
-                        console.log("got no query")
-            router.replace(`https://url.adrianstaude.de?sphere=1`)
-        }
-        
     }, [router.query]);
     return (
         <>
