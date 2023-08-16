@@ -157,10 +157,10 @@ const Header = () => {
                                 {locale == 'de' ? 'INFO' : 'INFO'}
                             </a>
                         </Link>
-                        <Link href='/view'>
+                       <Link href='/visionen/1'>
                             <a
                                 className={`menuLink ${
-                                    router.pathname == '/view' ? `current` : ''
+                                    router.pathname == '/visionen/1' ? `current` : ''
                                 }`}
                             >
                                 {locale == 'de' ? '3D' : '3D'}
@@ -311,10 +311,10 @@ const Header = () => {
                                 Info
                             </a>
                         </Link>
-                        <Link href='/view'>
+                        <Link href='/visionen/1'>
                             <a
                                 className={`mobileMenuLink  ${
-                                    router.asPath == '/view' ? `current` : ''
+                                    router.asPath == '/visionen/1' ? `current` : ''
                                 }`}
                                 onClick={() => {
                                     setOpen(false);
