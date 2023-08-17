@@ -11,13 +11,13 @@ export default function View(props) {
         if (router.query.sphere) {
             console.log('got query');
             router.replace(
-                `https://url.adrianstaude.de?sphere=${router.query.sphere}`
+                `https://spreevision.adrianstaude.de?sphere=${router.query.sphere}`
             );
         } else if (!router.query.sphere) {
             console.log('got no query');
             if (router.asPath === '/visionen/1') {
                 console.log('visionen/1 home');
-                router.replace(`https://url.adrianstaude.de?sphere=1`)
+                router.replace(`https://spreevision.adrianstaude.de?sphere=1`)
             }
             
         }

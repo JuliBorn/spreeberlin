@@ -13,6 +13,7 @@ const Article = (props) => {
         <Link href={props.link} passHref>
           <div className="card_content">
             <img
+          
               src={`/static/images/${props.pic_url}`}
               // width='600px'
               // height='450px'
